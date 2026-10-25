@@ -11,19 +11,19 @@ This is a small page made with HTML, CSS and JavaScript. It has three parts from
 
 I made a `userProfile` object with a name, birth year, developer status and hobbies. JavaScript calculates the approximate age and age in months. It also shows the number of hobbies and prints the data types in the browser console.
 
-**Screenshot:** `screenshots/1.png`.
+**Screenshot:** ![](screenshots/1.png)
 
 ## Part 2 - Form
 
 The form asks for a name and birth year. When the form is submitted, JavaScript reads the input values, checks the year, updates the object and displays the new profile. `preventDefault()` stops the page from reloading when the form is submitted.
 
-**Screenshot:** `screenshots/2.png`.
+**Screenshot:** ![](screenshots/2.png)
 
 ## Part 3 - List
 
 The Add Item button creates a new `li` element and adds it to the list. The Remove Last Item button removes the last element. The item count changes when the list changes.
 
-**Screenshot:** `screenshots/3.png`.
+**Screenshot:** ![](screenshots/3.png)
 
 ## What I practiced
 
