@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    background: #17191D;
+    color: #D5D7DC;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: min(1000px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+header {
+    background: #101216;
+    color: #D5D7DC;
+    padding: 18px 0;
+    border-bottom: 1px solid #30333A;
+    margin-bottom: 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+header span {
+    color: #969BA5;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.panel {
+    background: #202329;
+    border: 1px solid #343841;
+    border-radius: 6px;
+    padding: 22px;
+}
+
+h2 {
+    margin: 0 0 18px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+h3 {
+    margin: 0 0 3px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.profile p {
+    margin: 0;
+    color: #969BA5;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #343841;
+    color: #D5D7DC;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.stats div {
+    padding: 12px;
+    background: #191B20;
+    border: 1px solid #30333A;
+    border-radius: 5px;
+}
+
+.label {
+    display: block;
+    color: #969BA5;
+    font-size: 13px;
+}
+
+.stats strong {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#profileDetails {
+    color: #A7ABB4;
+}
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 12px 0;
+}
+
+.hobby-tag {
+    background: #30343C;
+    color: #C6CAD2;
+    border: 1px solid #414650;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #343841;
+    margin: 24px 0;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #C6CAD2;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background: #17191D;
+    color: #D5D7DC;
+    border: 1px solid #414650;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus {
+    outline: 1px solid #858B96;
+    border-color: #858B96;
+}
+
+input::placeholder {
+    color: #737985;
+}
+
+button {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border: 1px solid #505661;
+    border-radius: 4px;
+    background: #3A3F48;
+    color: #E0E2E6;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4A505B;
+}
+
+.secondary {
+    background: #292D34;
+    border-color: #414650;
+}
+
+.secondary:hover {
+    background: #383D46;
+}
+
+.task-form {
+    margin-top: 18px;
+}
+
+.list-count {
+    margin-top: 22px;
+    color: #969BA5;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    padding: 7px 0;
+    overflow-wrap: anywhere;
+}
+
+.message {
+    min-height: 20px;
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+.message.success {
+    color: #9AB7A3;
+}
+
+.message.error {
+    color: #C98E8E;
+}
+
+@media (max-width: 700px) {
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+}
